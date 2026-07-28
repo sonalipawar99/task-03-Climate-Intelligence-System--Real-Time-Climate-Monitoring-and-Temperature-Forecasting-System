@@ -1,4 +1,3 @@
-# task-03-Climate-Intelligence-System--Real-Time-Climate-Monitoring-and-Temperature-Forecasting-System
 # 🌍 Climate Intelligence System
 
 ## Project Overview
@@ -36,23 +35,51 @@ The system collects climate data, analyzes historical weather patterns, predicts
 
 ## Project Structure
 
-```
 Climate Intelligence System/
 │
 ├── configs/
-├── dashboard/
-├── data/
-├── forecasting/
-├── ingestion/
-├── logs/
-├── notebooks/
-├── outputs/
-├── risk_engine/
-├── tests/
+│   └── settings.py
 │
-├── README.md
+├── dashboard/
+│   ├── app.py
+│   ├── charts.py
+│   ├── alerts.py
+│   └── metrics.py
+│
+├── data/
+│   ├── climate_data.csv
+│   └── temperature_forecast.csv
+│
+├── forecasting/
+│   ├── prophet_engine.py
+│   ├── forecasting_pipeline.py
+│   ├── evaluation.py
+│   └── train_test_validation.py
+│
+├── ingestion/
+│   ├── weather_api.py
+│   ├── ingestion_pipeline.py
+│   └── validators.py
+│
+├── risk_engine/
+│   ├── heatwave.py
+│   ├── rainfall.py
+│   └── anomaly_detection.py
+│
+├── tests/
+│   ├── test_heatwave.py
+│   └── test_rainfall.py
+│
+├── notebooks/
+│   └── Climate_Intelligence_System.ipynb
+│
+├── outputs/
+│
+├── logs/
+│   └── logger.py
+│
 ├── requirements.txt
-```
+└── README.md
 
 ---
 
@@ -87,4 +114,4 @@ streamlit run dashboard/app.py
 
 **Sonali Vishal Pawar**
 
-Aspiring Data Scientist
+Data Science & AI Intern
